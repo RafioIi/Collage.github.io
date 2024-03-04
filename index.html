@@ -7,6 +7,12 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
 
+        html {
+            background-color: rgb(6, 9, 24);
+        }
+        a:link {
+            text-decoration: none;
+        }
         body {
             font-family: 'Honk', system-ui;
             margin: 0;
@@ -46,6 +52,7 @@
             margin-bottom: 10px;
             color: white;
             position: relative;
+            text-decoration: none;
         }
 
         .beatles-images {
@@ -64,9 +71,23 @@
 
         .beatle img {
             width: 55%;
+            min-height: 8rem;
             max-height: 8rem;
             border-radius: 50%;
-            border: 5px solid #e6e6002f;
+            border: 2px solid rgb(6, 9, 24);
+        }
+
+        .rac {
+            flex: 0 0 48%;
+            margin-bottom: 10px;
+            margin-left: 26%;
+        }
+
+        .rac img {
+            width: 55%;
+            min-height: 8rem;
+            border-radius: 50%;
+            border: 2px solid rgb(6, 9, 24);
         }
     </style>
 </head>
@@ -76,25 +97,19 @@
         <div class="matrix-container">
             <canvas id="Matrix"></canvas>
         </div>
-        <div class="lp-title">5 Sec of summer - Greatest Hits</div>
+        <div class="lp-title"><a href="Vergelijking.html">Dutch - Greatest Hits</a></div>
         <div class="beatles-images">
             <div class="beatle">
-                <img src="img/Schermafbeelding 2024-02-01 151140.png" alt="">
-
+                <a href="Typhoon.html"><img src="img/downloaden.jpeg" alt="."></a>
             </div>
             <div class="beatle">
-                <img src="img/Schermafbeelding 2024-02-01 151156.png" alt=""> 
+                <a href="Oceaan.html"><img src="img/downloaden (1).jpeg" alt=""></a>
             </div>
-            <div class="beatle">
-                <img src="img/Schermafbeelding 2024-02-01 151203.png" alt=""> 
-            </div>
-            <div class="beatle">
-                <img src="img/Schermafbeelding 2024-02-01 151208.png" alt=""> 
+            <div class="rac">
+                <a href="Manon.html"><img src="img/downloaden (2).jpeg" alt=""></a>
             </div>
         </div>
     </div>
     <script src="./index.js"></script>
 
 </body>
-
-</html>
